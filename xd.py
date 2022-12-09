@@ -39,3 +39,8 @@ add_selectbox = st.sidebar.selectbox(
     ("要", "喔", "哈密瓜")
 )
 
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )

@@ -84,7 +84,7 @@ tab2.write(data)
 
 
 
-
+st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, *, type="secondary", disabled=False)
 if st.button('Say hello'):
     st.write('Why hello there')
 else:

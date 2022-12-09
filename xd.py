@@ -3,6 +3,15 @@ from PIL import Image
 audio_file = open("一心兄弟.mp3", "rb")
 st.audio(audio_file.read()) 
 
+
+
+
+
+
+
+
+
+#################################分塊
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -18,3 +27,15 @@ with col3:
    audio_file = open("一心兄弟.mp3", "rb")
    st.audio(audio_file.read())
    #st.audio("https://drive.google.com/file/d/1WTw30Gu2WqBRYcbrDTQ3cno6qvlh6ykO/view?usp=share_link")
+
+   
+   
+   
+########################################sidebar
+   
+   
+add_selectbox = st.sidebar.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone")
+)
+

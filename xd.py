@@ -69,3 +69,15 @@ with tab2:
 with tab3:
    st.header("An owl")
    st.image("https://static.streamlit.io/examples/owl.jpg", width=200)      
+   
+   
+   
+   
+tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
+data = np.random.randn(10, 1)
+
+tab1.subheader("A tab with a chart")
+tab1.line_chart(data)
+
+tab2.subheader("A tab with the data")
+tab2.write(data)

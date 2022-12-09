@@ -35,7 +35,7 @@ with col3:
    
    
 add_selectbox = st.sidebar.selectbox(
-    "How would you like to be contacted?",
-    ("Email", "Home phone", "Mobile phone")
+    "要不要吃哈密瓜?",
+    ("要", "喔", "哈密瓜")
 )
 

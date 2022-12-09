@@ -81,3 +81,16 @@ tab1.line_chart(data)
 
 tab2.subheader("A tab with the data")
 tab2.write(data)
+
+
+
+
+if st.button('Say hello'):
+    st.write('Why hello there')
+else:
+    st.write('Goodbye')
+
+
+
+
+

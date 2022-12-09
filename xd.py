@@ -15,5 +15,6 @@ with col2:
 
 with col3:
    st.header("An owl")
+   audio_file = open("一心兄弟.mp3", "rb")
    st.audio(audio_file.read())
    #st.audio("https://drive.google.com/file/d/1WTw30Gu2WqBRYcbrDTQ3cno6qvlh6ykO/view?usp=share_link")

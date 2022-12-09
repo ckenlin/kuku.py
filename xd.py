@@ -84,11 +84,16 @@ tab2.write(data)
 
 
 
-st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, *, type="secondary", disabled=False)
+#st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, *, type="secondary", disabled=False)
+
+st.title("maling a button")
+result = st.button("Say hello")
 if st.button('Say hello'):
     st.write('Why hello there')
 else:
     st.write('Goodbye')
+
+      
 
 
 

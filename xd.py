@@ -15,4 +15,4 @@ with col2:
 
 with col3:
    st.header("An owl")
-   st.image("https://static.streamlit.io/examples/owl.jpg")
+   st.image("https://drive.google.com/file/d/1WTw30Gu2WqBRYcbrDTQ3cno6qvlh6ykO/view?usp=share_link")

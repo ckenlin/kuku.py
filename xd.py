@@ -71,7 +71,14 @@ with tab3:
    st.image("https://static.streamlit.io/examples/owl.jpg", width=200)      
    
    
-   
+#st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, *, type="secondary", disabled=False)
+
+st.title("maling a button")
+result = st.button("Say hello")
+if st.button('Say hello'):
+    st.write('Why hello there')
+else:
+    st.write('Goodbye')
    
 tab1, tab2 = st.tabs(["📈 Chart", "🗃 Data"])
 data = np.random.randn(10, 1)
@@ -84,14 +91,7 @@ tab2.write(data)
 
 
 
-#st.button(label, key=None, help=None, on_click=None, args=None, kwargs=None, *, type="secondary", disabled=False)
 
-st.title("maling a button")
-result = st.button("Say hello")
-if st.button('Say hello'):
-    st.write('Why hello there')
-else:
-    st.write('Goodbye')
 
       
 

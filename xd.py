@@ -11,7 +11,7 @@ with col1:
 
 with col2:
    st.header("A dog")
-   st.image("https://static.streamlit.io/examples/dog.jpg")
+   st.audio("https://drive.google.com/file/d/1WTw30Gu2WqBRYcbrDTQ3cno6qvlh6ykO/view?usp=share_link")
 
 with col3:
    st.header("An owl")

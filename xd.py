@@ -12,7 +12,7 @@ option = st.selectbox(
 
 st.write(
     audio_file = open("一心兄弟.mp3", "rb")
-    ,st.audio(audio_file.read()) )
+    ,st.audio(audio_file.read()) 
 
 #'You selected:', option
 

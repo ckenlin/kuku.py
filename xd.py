@@ -10,8 +10,9 @@ option = st.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
-st.write('You selected:', option)
+st.write(st.audio(audio_file.read()) )
 
+#'You selected:', option
 
 
 

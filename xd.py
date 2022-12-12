@@ -10,7 +10,7 @@ option = st.selectbox(
     'How would you like to be contacted?',
     ('Email', 'Home phone', 'Mobile phone'))
 
-st.write(
+st.write
     audio_file = open("一心兄弟.mp3", "rb")
     ,st.audio(audio_file.read()) 
 

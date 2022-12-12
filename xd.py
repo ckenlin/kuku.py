@@ -8,15 +8,15 @@ st.audio(audio_file.read())
 
 option = st.selectbox(
     'How would you like to be contacted?',
-    ('1', '2', '3'))
+    ('1', '2', '3'), key="disabled")
 st.write('You selected:', option)
-if option = "3" :
-         audio_file = open("一心兄弟.mp3", "rb")
-         st.audio(audio_file.read()) 
+#if option = "3" :
+        # audio_file = open("一心兄弟.mp3", "rb")
+       #  st.audio(audio_file.read()) 
          
 
 
-
+#https://docs.streamlit.io/library/api-reference/widgets/st.selectbox
 
 
 

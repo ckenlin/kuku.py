@@ -26,7 +26,7 @@ with st.sidebar:
     
     
     
-
+if add_radio == '林':
 option = st.selectbox(
     'How would you like to be contacted?',
     ('1', '2', '3'), key="disabled")

@@ -15,11 +15,11 @@ with st.sidebar:
         "歌手",
         ("林", "陳")
     )
-if add_radio == '林':
-        name={'一心兄弟','cd','dd'}        #放入歌名
-        option= st.selectbox( '請選擇想聽的音樂',name)
-        audio_file = open(option+'.mp3', "rb")
-        st.audio(audio_file.read())
+#if add_radio == '林':
+ #       name={'一心兄弟','cd','dd'}        #放入歌名
+  #      option= st.selectbox( '請選擇想聽的音樂',name)
+   #     audio_file = open(option+'.mp3', "rb")
+    #    st.audio(audio_file.read())
     
     
     
@@ -39,8 +39,8 @@ if option == '3':
 ################################        
         
         
-nname={'一心兄弟','cd','dd'}        #放入歌名
-option= st.selectbox( '請選擇想聽的音樂',nname)
+name={'一心兄弟','cd','dd'}        #放入歌名
+option= st.selectbox( '請選擇想聽的音樂',name)
 audio_file = open(option+'.mp3', "rb")
 st.audio(audio_file.read())   
 

@@ -3,24 +3,41 @@ from PIL import Image
 #audio_file = open("一心兄弟.mp3", "rb")
 #st.audio(audio_file.read()) 
 
+################################
 
+add_selectbox = st.sidebar.selectbox(
+    "歌手",
+    ("林", "陳")
+)
 
-
-
-
-
+################################
 
 with st.sidebar:
     add_radio = st.radio(
         "歌手",
         ("林", "陳")
     )
-#if add_radio == '林':
- #       name={'一心兄弟','cd','dd'}        #放入歌名
-  #      option= st.selectbox( '請選擇想聽的音樂',name)
-   #     audio_file = open(option+'.mp3', "rb")
-    #    st.audio(audio_file.read())
     
+################################
+       
+if add_radio == '林':        
+    name={'一心兄弟','cd','dd'}        #放入歌名
+    option= st.selectbox( '請選擇想聽的音樂',name)
+    audio_file = open(option+'.mp3', "rb")
+    st.audio(audio_file.read())   
+
+################################
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+   
     
     
     
@@ -36,17 +53,7 @@ if option == '3':
    st.audio(audio_file.read()) 
          
 
-################################        
-        
-if add_radio == '林':        
-    name={'一心兄弟','cd','dd'}        #放入歌名
-    option= st.selectbox( '請選擇想聽的音樂',name)
-    audio_file = open(option+'.mp3', "rb")
-    st.audio(audio_file.read())   
 
-
-
-################################
 
 
 
@@ -88,10 +95,7 @@ with col3:
 ########################################sidebar
    
    
-add_selectbox = st.sidebar.selectbox(
-    "要不要吃哈密瓜?",
-    ("要", "喔", "哈密瓜")
-)
+
 
 
       

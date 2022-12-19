@@ -4,7 +4,11 @@ audio_file = open("一心兄弟.mp3", "rb")
 st.audio(audio_file.read()) 
 
 
-
+with st.sidebar:
+    add_radio = st.radio(
+        "Choose a shipping method",
+        ("Standard (5-15 days)", "Express (2-5 days)")
+    )
 
 option = st.selectbox(
     'How would you like to be contacted?',
@@ -59,11 +63,7 @@ add_selectbox = st.sidebar.selectbox(
     ("要", "喔", "哈密瓜")
 )
 
-with st.sidebar:
-    add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
-    )
+
       
       
       

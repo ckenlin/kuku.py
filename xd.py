@@ -12,9 +12,19 @@ from PIL import Image
 
 with st.sidebar:
     add_radio = st.radio(
-        "Choose a shipping method",
-        ("Standard (5-15 days)", "Express (2-5 days)")
+        "歌手",
+        ("林", "陳")
     )
+    if add_radio == '林':
+        option = st.selectbox(
+    'How would you like to be contacted?',
+    ('1', '2', '3'), key="disabled")
+    
+    
+    
+    
+    
+    
 
 option = st.selectbox(
     'How would you like to be contacted?',

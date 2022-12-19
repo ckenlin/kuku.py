@@ -7,7 +7,7 @@ from PIL import Image
 
 add_selectbox = st.sidebar.selectbox(
     "歌手",
-    ("林", "陳")
+    ("林", "ALIN")
 )
 
 ################################
@@ -29,10 +29,14 @@ if add_selectbox == '林':
 
 ################################
     
+if add_selectbox == 'ALIN':     
+    st.header("林")
+    name={'摯友'}        #放入歌名
+    option= st.selectbox( '請選擇想聽的音樂',name)
+    audio_file = open(option+'.mp3', "rb")
+    st.audio(audio_file.read())
     
-    
-    
-    
+################################
 
     
     

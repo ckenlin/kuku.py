@@ -4,9 +4,9 @@ audio_file = open("一心兄弟.mp3", "rb")
 st.audio(audio_file.read()) 
 
 
-name={'一心兄弟','cd','dd'}
+name={'一心兄弟.','cd','dd'}
 option= st.selectbox( '請選擇想聽的音樂',name)
-audio_file = open(name.mp3'', "rb")
+audio_file = open(name, "rb")
 st.audio(audio_file.read()) 
 
 

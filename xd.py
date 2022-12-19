@@ -40,7 +40,7 @@ if option == '3':
         
         
 nname={'一心兄弟','cd','dd'}        #放入歌名
-option= st.selectbox( '請選擇想聽的音樂',name)
+option= st.selectbox( '請選擇想聽的音樂',nname)
 audio_file = open(option+'.mp3', "rb")
 st.audio(audio_file.read())   
 

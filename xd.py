@@ -26,7 +26,7 @@ with st.sidebar:
     
     
     
-if add_radio == '林':
+
 option = st.selectbox(
     'How would you like to be contacted?',
     ('1', '2', '3'), key="disabled")
@@ -38,11 +38,11 @@ if option == '3':
 
 ################################        
         
-        
-name={'一心兄弟','cd','dd'}        #放入歌名
-option= st.selectbox( '請選擇想聽的音樂',name)
-audio_file = open(option+'.mp3', "rb")
-st.audio(audio_file.read())   
+if add_radio == '林':        
+    name={'一心兄弟','cd','dd'}        #放入歌名
+    option= st.selectbox( '請選擇想聽的音樂',name)
+    audio_file = open(option+'.mp3', "rb")
+    st.audio(audio_file.read())   
 
 
 

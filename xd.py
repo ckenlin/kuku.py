@@ -4,11 +4,7 @@ audio_file = open("一心兄弟.mp3", "rb")
 st.audio(audio_file.read()) 
 
 
-name={'一心兄弟.mp3','cd','dd'}
 
-option= st.selectbox( '請選擇想聽的音樂',name)
-audio_file = open("name", "rb")
-st.audio(audio_file.read()) 
 
 
 
@@ -28,6 +24,14 @@ if option == '3':
    audio_file = open("一心兄弟.mp3", "rb")
    st.audio(audio_file.read()) 
          
+        
+name={'一心兄弟.mp3','cd','dd'}
+
+option= st.selectbox( '請選擇想聽的音樂',name)
+audio_file = open("name", "rb")
+st.audio(audio_file.read())   
+
+
 
 
 #https://docs.streamlit.io/library/api-reference/widgets/st.selectbox

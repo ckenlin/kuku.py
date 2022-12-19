@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
-audio_file = open("一心兄弟.mp3", "rb")
-st.audio(audio_file.read()) 
+#audio_file = open("一心兄弟.mp3", "rb")
+#st.audio(audio_file.read()) 
 
 
 
@@ -24,12 +24,18 @@ if option == '3':
    audio_file = open("一心兄弟.mp3", "rb")
    st.audio(audio_file.read()) 
          
+
+################################        
         
-name={'一心兄弟','cd','dd'}
+        
+name={'一心兄弟','cd','dd'}        #放入歌名
 option= st.selectbox( '請選擇想聽的音樂',name)
 audio_file = open(option+'.mp3', "rb")
 st.audio(audio_file.read())   
 
+
+
+################################
 
 
 
